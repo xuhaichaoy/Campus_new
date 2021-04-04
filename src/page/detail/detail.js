@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import React from "react";
+import DetailHook from '../../hooks/detailHook'
 // import api from '../../config/http';
 import "./detail.css";
 
@@ -8,39 +8,12 @@ import Textarea from '../../component/textarea/textarea';
 import Comment from '../../component/comment/comment';
 import Like from '../../component/like/like';
 
-
-console.log(111)
-
-const tabs = [
-    { title: <Badge>回复</Badge> },
-    { title: <Badge>点赞</Badge> },
-    { title: <Badge>转发</Badge> },
-    { title: <Badge>收藏</Badge> },
-];
-
 function Detail() {
-    const usehistory = useHistory()
-    const textareaRef = useRef(null)
+    const [showTextarea, tabs, returnBack, cancelInput, handleClick] = DetailHook()
 
-    const [showTextarea, setShowTextarea] = useState(false)
-
-    function returnBack() {
-        usehistory.goBack()
-    }
-
-
-    function cancelInput(e) {
-        if (e.target.getAttribute('maxlength')) {
-            return
-        }
-        setShowTextarea(false)
-    }
-
-    function handleClick() {
-        setShowTextarea(true)
-        console.log(textareaRef)
-    }
-
+    tabs.map((tabs) => {
+        return <Badge key = {tabs}>{tabs}</Badge>
+    })
     return (
         <div>
             <div className="detailIndex">
@@ -51,7 +24,6 @@ function Detail() {
                     onLeftClick={returnBack}
                     rightContent={[
                         <span key="0" style={{ marginRight: '16px' }}>关注</span>,
-                        // <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
                         <Icon key="1" type="ellipsis" />,
                     ]}
                 >Detail详情页</NavBar>
@@ -127,7 +99,7 @@ function Detail() {
                 </div>
             </div>
             {showTextarea ? (<div className="ReplyBox" onClick={cancelInput}>
-                <Textarea ref = {textareaRef}/>
+                <Textarea/>
             </div>) : ''}
 
 
