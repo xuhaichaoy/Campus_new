@@ -13,7 +13,11 @@
 
 .tabsIndex .tabItem {
   height: auto !important;
-  background: #ccc;
+  background: #eee;
+  display: 'flex';
+  align-items: 'center';
+  justify-content: 'center';
+  background-color: '#fff';
 }
 
 .tabsIndex .tabItem .am-pull-to-refresh {

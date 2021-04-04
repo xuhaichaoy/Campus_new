@@ -18,7 +18,11 @@
 
     .tabItem {
         height: auto !important;
-        background: #ccc;
+        background: #eee;
+        display: 'flex';
+        align-items: 'center';
+        justify-content: 'center';
+        background-color: '#fff';
 
         .am-pull-to-refresh {
             width: 100%;
@@ -96,7 +100,8 @@
                             max-height: 100px;
                             margin-right: 10px;
                         }
-                        .cardContentImgItem:nth-child(3n){
+
+                        .cardContentImgItem:nth-child(3n) {
                             margin-right: 0;
                         }
                     }
@@ -205,18 +210,12 @@
                     justify-content: space-between;
                     margin-bottom: 20px;
 
-                    .attentTips {
-
-                    }
+                    .attentTips {}
 
                     .attentBtns {
-                        i {
+                        i {}
 
-                        }
-
-                        span {
-                            
-                        }
+                        span {}
                     }
                 }
 
