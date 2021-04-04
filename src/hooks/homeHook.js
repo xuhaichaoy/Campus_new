@@ -25,10 +25,7 @@ function HomeHook() {
         }
         return dataArr;
     }
-    function detail(i) {
-        this.props.history.push("/detail/" + i);
-    };
-
+    
     function refresh() {
         setRefreshing(true)
         setTimeout(() => {
@@ -52,7 +49,7 @@ function HomeHook() {
         setDate(genData())
     }, [])
 
-    return [refreshing, down, style, data, tabs, detail, refresh, handleChange, handleClick]
+    return [refreshing, down, style, data, tabs, refresh, handleChange, handleClick]
 }
 
 export default HomeHook

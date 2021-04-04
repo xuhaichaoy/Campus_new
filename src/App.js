@@ -1,17 +1,21 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom'
-import logo from './logo.svg';
 import './App.css';
-import Search from "./component/search/search"
+
 
 import Index from "./page/index/index"
+import Detail from "./page/detail/detail"
+
+
+console.log(Detail)
 
 function App() {
   return (
     <div className="App">
-      <Search/>
+      
       <Switch>
-        <Route path="/" component={Index} />
+        <Route path="/index" component={Index} />
+        <Route path="/detail/:tid" component={Detail} />
       </Switch>
     </div>
   );

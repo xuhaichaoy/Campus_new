@@ -3,7 +3,7 @@ import Home from "../home/home"
 import Circle from "../circle/circle"
 import Mine from "../mine/mine"
 import Answer from "../answer/answer"
-
+import Search from "../../component/search/search"
 import { TabBar } from 'antd-mobile'
 
 function IndexPage() {
@@ -12,7 +12,7 @@ function IndexPage() {
 
     return (
         <div>
-
+            <Search/>
             <TabBar
                 unselectedTintColor="#949494"
                 tintColor="#33A3F4"
