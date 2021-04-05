@@ -1,20 +1,8 @@
-import React from "react";
-// import api from '../../config/http';
-// import { DatePicker } from 'antd-mobile';
 import "./answer.css";
 import { PullToRefresh } from 'antd-mobile';
 
 import AnswerHook from '../../hooks/answerHook'
 
-
-
-function genData() {
-    const dataArr = [];
-    for (let i = 0; i < 20; i++) {
-        dataArr.push(i);
-    }
-    return dataArr;
-}
 
 function Answer() {
     const [refreshing, down, style, refresh] = AnswerHook()

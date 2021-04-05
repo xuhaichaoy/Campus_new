@@ -8,6 +8,7 @@ import Detail from "./page/detail/detail"
 import CircleDetail from "./page/circledetail/circledetail"
 import ManageCircle from "./page/managecircle/managecircle.js"
 import AllCircle from "./page/allcircle/allcircle"
+import Personal from "./page/personal/personal"
 
 
 console.log(Detail)
@@ -22,6 +23,7 @@ function App() {
         <Route path="/circledetail/:value" component={CircleDetail} />
         <Route path="/managecircle" component={ManageCircle} />
         <Route path="/allcircle" component={AllCircle} />
+        <Route path="/personal" component={Personal} />
       </Switch>
     </div>
   );

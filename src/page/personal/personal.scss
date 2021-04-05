@@ -1,0 +1,197 @@
+
+
+.personal {
+    .returnBtn {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: rgba(0,0,0,.6);
+        background-image: url(../../static/img/返_回.png);
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        left: 16px;
+        top: 10px;
+        z-index: 90;
+    }
+    .personalTopBox {
+        background: url(https://pic.cgyouxi.com/orange/title/1612071289_9649.gif) center top / auto 100% no-repeat;
+        height: 240px;
+        width: 100%;
+        .personalTop {
+
+        }
+    }
+
+    .personalInfoBox {
+        background: white;
+        padding-bottom: 20px;
+        position: relative;
+        .personalInfoImage {
+            position: absolute;
+            top: -30px;
+            left: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .personalInfoEditBtn {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 0;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #135200;
+            border-radius: 20px;
+            padding-left: 12px;
+            padding-right: 12px;
+            box-sizing: border-box;
+            i{
+                width: 14px;
+                height: 14px;
+                display: inline-block;
+                vertical-align: middle;
+                background: url(../../static/img/编_辑1.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            span {
+                margin-left: 2px;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 12px;
+                height: 30px;
+                line-height: 30px;
+                color: #135200;
+            }
+        }
+
+        .personInfoUser{
+            text-align: left;
+            padding-top: 50px;
+            padding-left: 16px;
+            padding-right: 16px;
+            .personalName {
+                font-size: 0;
+                span {
+                    font-size: 20px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                i{
+                    margin-left: 6px;
+                    width: 20px;
+                    height: 20px;
+                    background: url(../../static/img/男.png);
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+
+            .personalSchool{
+                margin-top: 8px;
+                font-size: 13px;
+            }
+        }
+
+        .personalWord{
+            margin-top: 6px;
+            font-size: 12px;
+            text-align: left;
+            padding-left: 16px;
+            padding-right: 16px;
+            color: #8c8c8c;
+            line-height: 16px;
+        }
+
+        .mineUserTips {
+            margin-top: 26px;
+            display: flex;
+            justify-content: center;
+            .mineUserItem {
+                margin-left: 60px;
+                i {
+                    font-style: normal;
+                    font-size: 13px;
+                    display: block;
+                }
+                span {
+                    margin-top: 4px;
+                    display: block;
+                    color: #8c8c8c;
+                    font-size: 13px;
+                }
+            }
+
+            .mineUserItem:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    
+    .vistorRecordBox {
+        padding-top: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        background: white;
+        text-align: left;
+        .recordTitle {
+            font-size: 14px;
+        }
+
+        .recordBox {
+            margin-top: 12px;
+            text-align: left;
+            .recordItems {
+                margin-left: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                text-align: center;
+                width: 66px;
+                img {
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                }
+
+                span {
+                    margin-top: 8px;
+                    display: block;
+                    font-size: 12px;
+                }
+            }
+
+            .recordItems:first-child, .recordItems:nth-child(6n) {
+                margin-left: 0;
+            }
+        }
+
+    }
+
+    .personalData {
+        margin-top: 10px;
+        .personalDataContent {
+            background: white;
+            display: flex;
+            min-height: 150px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

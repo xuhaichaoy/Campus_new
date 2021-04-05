@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-function HomeHook() {
+function AnswerHook() {
     const [refreshing, setRefreshing] = useState(false)
     const [down, setDown] = useState(false)
     const [height, setHeight] = useState(document.documentElement.clientHeight)
@@ -34,4 +34,4 @@ function HomeHook() {
     return [refreshing, down, style, refresh]
 }
 
-export default HomeHook
+export default AnswerHook
