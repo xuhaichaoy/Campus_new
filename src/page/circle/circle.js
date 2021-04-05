@@ -1,5 +1,6 @@
 import React from 'react'
-import Swiper from "swiper";
+import Swiper from 'swiper';
+import { Link } from 'react-router-dom'
 import { PullToRefresh } from 'antd-mobile';
 import CircleHook from '../../hooks/circleHook'
 import CircleComponent from '../../component/circle/circle';
@@ -10,17 +11,17 @@ function Circle() {
 
     const [refreshing, down, style, refresh] = CircleHook()
 
-    const newlist = [1,1,1,1,1,1]
+    const newlist = [1, 1, 1, 1, 1, 1]
 
     new Swiper(".swiper-container", {
         slidesPerView: 1,
         spaceBetween: 10,
         centeredSlides: false,
         virtual: {
-          slides: newlist,
+            slides: newlist,
         },
     });
-    
+
     return (
         <div className="circle">
             <PullToRefresh
@@ -39,13 +40,15 @@ function Circle() {
                             我的圈子
                         </div>
                         <div className="mineCircleMore">
-                            查看更多
+                            <Link to="/managecircle">
+                                查看更多
+                            </Link>
                         </div>
                     </div>
                     <div className="mineCircleContent">
                         <div className="mineCircleItemBox">
                             <img src="//pic.cgyouxi.com/orange/upload/202102/79135432_724bf8b1a12cc605b504f9a34d4b2fbc.png!n300" />
-                            <span>建行卡圣诞开始</span>
+                            <Link to="/circledetail/1"><span>建行卡圣诞开始</span></Link>
                         </div>
                         <div className="mineCircleItemBox">
                             <img src="//pic.cgyouxi.com/orange/upload/202102/79135432_724bf8b1a12cc605b504f9a34d4b2fbc.png!n300" />
@@ -74,7 +77,9 @@ function Circle() {
                             </div>
 
                             <div className="mineCareTopMore">
-                                查看更多
+                                <Link to="/allcircle">
+                                    查看更多
+                                </Link>
                             </div>
                         </div>
                         <div className="mineCareTopTips">
