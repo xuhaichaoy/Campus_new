@@ -2,6 +2,7 @@ import React from "react";
 import { List, TextareaItem } from 'antd-mobile';
 import { createForm } from 'rc-form';
 import "./textarea.css";
+
 class TextareaItemExample extends React.Component {
     componentDidMount() {
     }
