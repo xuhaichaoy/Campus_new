@@ -7,6 +7,19 @@ export class AppController {
 
   @Get()
   getHello(): string {
+    console.log(22222)
     return this.appService.getHello();
+  }
+}
+
+
+@Controller('index')
+export class AppController1 {
+  constructor(private readonly appService: AppService) {}
+
+  @Get()
+  getHello1(): string {
+    console.log(11111)
+    return this.appService.getHello1();
   }
 }
