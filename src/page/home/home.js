@@ -38,10 +38,10 @@ function Home() {
                   </div>
                   <div className="attentionTips">
                     当前还没有关注的相关内容号、圈子等
-                    </div>
+                  </div>
                   <div className="addAttentionBtn">
                     添加关注
-                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -103,7 +103,7 @@ function Home() {
                         “大家好，我叫枕玉，因为偷偷修魔被师尊推下山崖结束了罪e的一生。但是我不会就这样轻易地狗带！现征集好心人给我打999999灵力让我一刀9999999，一拳一个小朋友，事成之后我给你个天蓬元帅当当。”（划掉）
                         本片又名《如何看待魔教少主被一群正道包围不知所措》
                         枕玉大难不死，为了拿到藏在秘密禁地的力量，化名青禾与自己带着“正道buff”的仇人一起走上了寻秘之路。在这次意料之外的旅途之中，枕玉找到了杀死“正道”的办法……
-                    </div>
+                      </div>
                     </Link>
                     <div className="cardContentImgBox">
                       <img src="//pic.cgyouxi.com/orange/upload/202012/79031554_2fa4ff1e09657db2a72f3d4f3b2ef859.jpg!n300" className="cardContentImgItem" />
