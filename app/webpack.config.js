@@ -17,7 +17,7 @@ module.exports = {
                 test: /.tsx?$/,
                 use: 'ts-loader',
                 exclude: /node_modules/,
-            },
+            },      
         ],
     },
     mode: 'development',
@@ -26,6 +26,7 @@ module.exports = {
     },
     plugins: [new webpack.HotModuleReplacementPlugin()],
     output: {
+        libraryTarget:"commonjs",
         path: path.join(__dirname, 'dist'),
         filename: 'server.js',
     },
