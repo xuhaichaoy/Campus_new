@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
+    "lib": ["es5", "es6"],
+    "target": "es6",
     "module": "commonjs",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": false,
-    "target": "es6",
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",

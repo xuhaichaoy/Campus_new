@@ -12,8 +12,13 @@ import { AppService } from './app.service';
       username: 'root',
       password: 'haichao6909@',
       database: 'campus',
-      entities: [__dirname + '/../**/*.entity{.ts,.js}',],
+      entities: ["dist/entity/**/*.js"],
       synchronize: true,
+      "cli": {
+        "entitiesDir": "dist/entity",
+        "migrationsDir": "src/migration",
+        "subscribersDir": "src/subscriber"
+      }
     }),
   ],
   controllers: [AppController],
