@@ -1,17 +1,22 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Tabs, Badge, PullToRefresh, Icon } from 'antd-mobile';
 import { Link } from 'react-router-dom'
 import HomeHook from '../../hooks/homeHook'
 import "./home.css";
 
 function Home() {
-  const [refreshing, down, style, data, tabs, refresh, handleChange, handleClick] = HomeHook()
+  const [refreshing, down, style, data, tabs, refresh, handleChange, handleClick, pull] = HomeHook()
 
   tabs.map(badge => {
     return {
       title: <Badge key={badge}>{badge}</Badge>
     }
   })
+
+  useEffect(() => {
+    console.log(pull)
+  }, [])
+  
 
   return (
     <div className="tabsIndex">
@@ -23,7 +28,8 @@ function Home() {
         <div className="tabItem">
           <PullToRefresh
             damping={60}
-            // ref={el => this.ptr = el}
+            // ref={pull}
+            // ref = {el => this.ptr = el}
             style={style}
             indicator={down ? {} : { deactivate: '上拉可以刷新' }}
             direction={down ? 'down' : 'up'}

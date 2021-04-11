@@ -10,7 +10,7 @@ import { AppService } from './app.service';
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'haichao6909@',
+      password: 'Abcd@1234',
       database: 'campus',
       entities: ["dist/entity/**/*.js"],
       synchronize: true,
