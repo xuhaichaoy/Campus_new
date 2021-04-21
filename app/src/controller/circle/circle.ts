@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { CircleService } from '../service/circle';
+import { CircleService } from '../../service/circle/circle';
 
 @Controller()
 export class CircleController {

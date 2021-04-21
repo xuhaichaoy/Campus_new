@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { CircleController } from './controller/circle';
-import { CircleService } from './service/circle';
+import { CircleController } from './controller/circle/circle';
+import { CircleService } from './service/circle/circle';
 
 describe('AppController', () => {
   let circleController: CircleController;

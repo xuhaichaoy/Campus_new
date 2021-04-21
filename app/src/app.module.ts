@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { CircleController } from './controller/circle';
+import { CircleController } from './controller/circle/circle';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { CircleService } from './service/circle';
+import { CircleService } from './service/circle/circle';
 
 @Module({
   imports: [
