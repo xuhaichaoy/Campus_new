@@ -1,22 +1,22 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { CircleController } from './controller/circle';
+import { CircleService } from './service/circle';
 
 describe('AppController', () => {
-  let appController: AppController;
+  let circleController: CircleController;
 
   beforeEach(async () => {
     const app: TestingModule = await Test.createTestingModule({
-      controllers: [AppController],
-      providers: [AppService],
+      controllers: [CircleController],
+      providers: [CircleService],
     }).compile();
 
-    appController = app.get<AppController>(AppController);
+    circleController = app.get<CircleController>(CircleController);
   });
 
   describe('root', () => {
     it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+      expect(circleController.getHello()).toBe('Hello World!');
     });
   });
 });

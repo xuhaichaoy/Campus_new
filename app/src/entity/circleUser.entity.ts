@@ -4,8 +4,8 @@ import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateCol
 // 圈子成员表
 // 
 
-@Entity('circleUser')
-export class UserEntity {
+@Entity('circleuser')
+export class CircleUserEntity {
     @PrimaryGeneratedColumn({
         type: 'int',
         comment: '主键id',

@@ -4,7 +4,7 @@ import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateCol
 // id 圈子id 圈子名 帖子 成员 简介 封面图 发帖人 创建时间 是否加入
 
 @Entity('circle')
-export class UserEntity {
+export class CircleEntity {
     @PrimaryGeneratedColumn({
         type: 'int',
         comment: '主键id',

@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
+import { CircleController } from './controller/circle';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AppService } from './app.service';
+import { CircleService } from './service/circle';
 
 @Module({
   imports: [
@@ -10,7 +10,7 @@ import { AppService } from './app.service';
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'Abcd@1234',
+      password: 'haichao6909@',
       database: 'campus',
       entities: ["dist/entity/**/*.js"],
       synchronize: true,
@@ -21,7 +21,7 @@ import { AppService } from './app.service';
       }
     }),
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [CircleController],
+  providers: [CircleService],
 })
 export class AppModule {}
